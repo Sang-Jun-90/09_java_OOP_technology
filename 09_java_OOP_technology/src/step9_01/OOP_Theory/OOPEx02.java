@@ -65,6 +65,18 @@ public class OOPEx02 {
 		Wizard w1 = new Wizard();
 		
 		w1.showStatus();
+		w1.levelUp();
+		w1.showStatus();
+		
+		System.out.println();
+		
+		Worrior w2 = new Worrior();
+		
+		w2.showStatus();
+		w2.levelUp();
+		w2.levelUp();
+		w2.levelUp();
+		w2.showStatus();
 		
 		
 	}
