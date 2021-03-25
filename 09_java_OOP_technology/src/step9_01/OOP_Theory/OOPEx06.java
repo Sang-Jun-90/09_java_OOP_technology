@@ -33,7 +33,7 @@ interface CC {
 	
 }
 // 인터페이스는 상속이 아니라 "구현한다"고 표현한다.
-class DD implements BB,CC { // 인터페이스는 자중구현이 가능하다.
+class DD implements BB,CC { // 인터페이스는 다중구현이 가능하다.
 
 	@Override
 	public void test3() {
