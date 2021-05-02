@@ -28,11 +28,13 @@ class Test3 {
 		this.name = name;
 		this.age = age;
 	}
+	
 	// 자동완성 기능 : 이클립스 좌측상단 source 에서 제너레이트에서 진행가능
 	@Override
 	public String toString() {
 		return "Test3 [name=" + name + ", age=" + age + "]";
 	}
+
 	
 }
 

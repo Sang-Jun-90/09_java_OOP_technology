@@ -11,6 +11,8 @@ package step9_01.OOP_Theory;
 class Worrior2 extends Charactor {
 	
 	// 메서드 오버라이딩(메소드 재정의)
+	// 이미 있는 메서드를 수정하거나 새로운 메서드를 만들어낼 수 있다.
+	
 	void levelUp() {
 		this.level++;
 		this.power +=100;
@@ -21,7 +23,6 @@ class Worrior2 extends Charactor {
 	}
 	// Worrior2 클래스만의 메서드 추가
 	void dash() {
-		
 		System.out.println("# dash!");
 	}
 }
@@ -38,7 +39,6 @@ class Wizard2 extends Charactor {
 	}
 	// Wizard2 클래스만의 메서드 추가
 	void fireball() {
-		
 		System.out.println("# fireball!");
 	}
 }
