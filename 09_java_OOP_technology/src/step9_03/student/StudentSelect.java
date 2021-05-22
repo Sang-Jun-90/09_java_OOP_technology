@@ -16,8 +16,8 @@ public class StudentSelect {
 		}
 		else {
 			System.out.println("정보가 없습니다.");
+			return null;
 		}
-		return null;
 	}
 	
 	

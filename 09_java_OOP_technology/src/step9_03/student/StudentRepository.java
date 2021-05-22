@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class StudentRepository {
 
+	// 싱글톤
+	
 	private static HashMap<String, StudentVO> stDB = new HashMap<String , StudentVO>();
 
 	public static HashMap<String, StudentVO> getStDB() {

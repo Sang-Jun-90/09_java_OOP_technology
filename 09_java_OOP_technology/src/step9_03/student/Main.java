@@ -1,4 +1,5 @@
 package step9_03.student;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
@@ -37,6 +38,23 @@ public class Main {
 				 *    이름과 번호를 변경할 수 있는 기능
 				 * 
 				 * */
+				System.out.print("아이디를 입력하세요 : ");
+				String id = scan.next();
+				
+				StudentSelect stSelect = controller.getSelect();
+				StudentVO st = stSelect.select(id);
+				if(st != null) {
+					System.out.print("번호를 입력하세요 : ");
+					int num = scan.nextInt();
+					
+					System.out.print("이름을 입력하세요 : ");
+					String name = scan.next();
+					
+					st.setNum(num);
+					st.setName(name);
+				}		
+				
+				
 			}
 			else if (selectMenu == 3) {
 				/*
@@ -45,6 +63,18 @@ public class Main {
 				 *  - 아이디를 입력받아서 해당되는 아이디가 있으면 삭제
 				 * 
 				 * */
+				System.out.print("아이디를 입력하세요 : ");
+				String id = scan.next();
+				
+				StudentSelect stSelect = controller.getSelect();
+				StudentVO st = stSelect.select(id);
+				
+				if(st != null) {
+					StudentDAO dao = controller.getStDAO();
+					dao.remove(id);
+					System.out.println("삭제 완료");
+				}
+				
 			}
 			else if (selectMenu == 4) {
 				
